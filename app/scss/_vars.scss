@@ -1,25 +1,29 @@
-// %AnPro-Regular {
-//   font-family: 'AnonymousPro-Regular', sans-serif;
-//   font-weight: normal;
-//   display: swap;
-// }
+%Bold {
+  font-family: 'OpenSans-Bold', sans-serif;
+  display: swap;
+}
 
-// %AnPro-Bold {
-//   font-family: 'AnonymousPro-Bold', sans-serif;
-//   font-weight: 700
-// }
+%Medium {
+  font-family: 'Montserrat-Medium', sans-serif;
+  display: swap;
+}
+%Regular {
+  font-family: 'Montserrat-Regular', sans-serif;
+  display: swap;
+}
 
-// %AlGrey-Bold {
-//   font-family: 'AlegreyaSC-Bold', sans-serif;
-//   font-weight: 700;
-// }
 
-// %AlGrey-Regular {
-//   font-family: 'AlegreyaSC-Regular', sans-serif;
-//   font-weight: normal;
-// }
 
-// $blue: #ABD0D3;
-// $text: #F2F1ED;
-// $background: #3B3B3B;
+$blue: #A1B4CC;
+// $contrast: #FFA420;
+// $contrast: #95d5f5;
+$contrast: rgb(171, 207, 255);
+$white: #F5F5F5;
+$background: #213B5E;
+$tg: #24A1DE;
+$wh: #2cb742;
 // $line: #BCB3A9;
+
+// @mixin border {
+//   background: linear-gradient(90deg, #1c3748 0%, #00fffb 50%, #1c3748 100%);
+// }
