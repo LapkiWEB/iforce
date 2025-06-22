@@ -99,6 +99,11 @@
 }
 
 @media(max-width: 1400px) {
+  .title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
   .container {
     padding: 0 80px;
   }
@@ -106,6 +111,21 @@
   .main-screen {
     background-size: cover;
     background-position: top left;
+  }
+
+  .main-services-bg {
+    padding: 30px;
+  }
+
+  .main-services__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .main-services__number {
+    img {
+      height: 100px;
+    }
   }
 }
 
@@ -122,11 +142,39 @@
   .main-screen__subtitle {
     font-size: 18px;
   }
+
+  .main-services__item {
+    height: 350px;
+  }
+
+  .main-services__item-big {
+    height: 100%;
+  }
+
+  .main-services__number {
+    img {
+      height: 80px;
+    }
+  }
+
+  .main-services__title {
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 5px;
+  }
 }
 
 @media(max-width: 1100px) {
   .container {
     padding: 0 60px;
+  }
+
+  .main-services__item {
+    height: 300px;
+  }
+
+  .main-services__item-big {
+    height: 100%;
   }
 }
 
@@ -135,6 +183,32 @@
     font-size: 64px;
     line-height: 80px;
   }
+
+  .main-services__inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+  }
+
+  .main-services__item {
+    background-size: cover;
+    height: fit-content;
+
+    &:hover {
+      background-size: cover;
+    }
+  }
+
+  .main-services__number {
+    img {
+      height: 60px;
+    }
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
 }
 
 @media(max-width: 800px) {
@@ -189,15 +263,26 @@
     line-height: 58px;
     letter-spacing: -3px;
   }
-  .menu-list{
+
+  .menu-list {
     width: fit-content;
+  }
+
+  .main-services__number {
+    img {
+      height: 40px;
+    }
+  }
+  .main-services-bg{
+    padding: 20px;
   }
 }
 
 @media(max-width: 400px) {
-  .header{
+  .header {
     padding: 10px 0;
   }
+
   .global-btn {
     padding: 10px 14px;
   }
@@ -213,7 +298,12 @@
   .menu-wrapper {
     margin-bottom: 40px;
   }
-  .main-screen{
+
+  .main-screen {
     margin-top: 0;
+  }
+  .main-services__title{
+    font-size: 24px;
+    line-height: 26px;
   }
 }
