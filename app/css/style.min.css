@@ -552,6 +552,30 @@ body.menu-opened {
   top: 7px;
 }
 
+.main-company .container {
+  position: relative;
+}
+.main-company .container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 950px;
+  height: 235px;
+  background-image: url("../images/icons/iforce.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.main-company__descr {
+  margin-bottom: 30px;
+}
+
+.main-company__title {
+  padding-top: 130px;
+}
+
 @media (max-width: 1850px) {
   .menu__btn {
     display: block;
@@ -654,6 +678,10 @@ body.menu-opened {
   .main-services__number img {
     height: 100px;
   }
+  .main-company .container::before {
+    width: 730px;
+    height: 180px;
+  }
 }
 @media (max-width: 1200px) {
   .nav.active {
@@ -690,6 +718,9 @@ body.menu-opened {
   }
   .main-services__item-big {
     height: 100%;
+  }
+  .main-company__title {
+    padding-top: 200px;
   }
 }
 @media (max-width: 900px) {
@@ -733,6 +764,9 @@ body.menu-opened {
     line-height: 68px;
     letter-spacing: -4px;
   }
+  .main-company .container::before {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .header__contants .social {
@@ -740,6 +774,9 @@ body.menu-opened {
   }
 }
 @media (max-width: 600px) {
+  .section {
+    padding: 30px 0;
+  }
   .global-btn {
     padding: 12px 20px;
   }
@@ -772,6 +809,12 @@ body.menu-opened {
   .main-services-bg {
     padding: 20px;
   }
+  .main-company__title {
+    padding-top: 160px;
+  }
+  .main-company.section {
+    padding-top: 0;
+  }
 }
 @media (max-width: 400px) {
   .header {
@@ -792,5 +835,8 @@ body.menu-opened {
   .main-services__title {
     font-size: 24px;
     line-height: 26px;
+  }
+  .main-company__title {
+    padding-top: 140px;
   }
 }

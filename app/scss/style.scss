@@ -417,6 +417,32 @@
 // end section main-services
 
 
+// start section main-company
+.main-company{
+  .container{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      width: 950px;
+      height: 235px;
+      background-image: url('../images/icons/iforce.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}
+.main-company__descr{
+  margin-bottom: 30px;
+}
+.main-company__title{
+  padding-top: 130px;
+}
+// end section main-company
+
 
 
 
