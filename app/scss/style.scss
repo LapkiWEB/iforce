@@ -613,14 +613,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url('../images/content/questions-bg.png');
-  .global-btn{
+
+  .global-btn {
     margin: 0 auto;
   }
 }
-.questions__inner{
+
+.questions__inner {
   margin-bottom: 50px;
 }
+
 .questions__item {
   padding: 20px 60px;
   max-width: 1274px;
@@ -701,7 +703,64 @@
 // end section questions
 
 
+// start section offer
+.offer__inner {
+  // display: flex;
+  // justify-content: space-between;
+  overflow: hidden;
+}
 
+@media (min-width: 1000px) {
+  .offer__inner {
+    display: flex;
+  }
+}
+
+.offer__content {
+  flex: 0 0 100%;
+  display: flex;
+  padding-right: 30px;
+  .container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    // padding-left: 140px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.offer__body {
+  width: 50%;
+}
+
+.offer__imeage {
+  img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .offer__imeage {
+    flex: 0 0 50%;
+    transform: translate(-100%, 0px)
+  }
+}
+
+// .offer__item{
+//   width: 50%;
+// }
+.offer__descr {
+  margin-bottom: 30px;
+}
+
+// .offer__item-img{
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+
+// }
+// end section offer
 
 
 

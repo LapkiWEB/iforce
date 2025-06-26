@@ -123,7 +123,7 @@
 @media(max-width: 1400px) {
   .title {
     font-size: 48px;
-    line-height: 48px;
+    line-height: 58px;
   }
 
   .container {
@@ -244,6 +244,29 @@
   }
 }
 
+@media(max-width: 1000px) {
+  .offer__body {
+    width: 100%;
+  }
+
+  .offer__content {
+    margin-bottom: 30px;
+  }
+
+  .offer__imeage {
+    padding: 0 20px;
+  }
+
+  .offer__imeage img {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    // margin-left: auto;
+  }
+}
+
+
 @media(max-width: 900px) {
   .main-screen__title {
     font-size: 64px;
@@ -272,7 +295,7 @@
 
   .title {
     font-size: 36px;
-    line-height: 36px;
+    line-height: 40px;
   }
 
   .partners__item {
@@ -288,9 +311,10 @@
 
     }
   }
-    .questions__item{
-      padding: 20px;
-    }
+
+  .questions__item {
+    padding: 20px;
+  }
 
 }
 
