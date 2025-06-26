@@ -578,7 +578,30 @@
 }
 
 
+// start section partners
+.partners__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
+.partners__item {
+  margin-bottom: 30px;
+  max-width: 294px;
+  width: 100%;
+  height: 176px;
+  border-radius: 5px;
+
+  img {
+    max-width: 294px;
+    width: 100%;
+    height: 176px;
+    border-radius: 5px;
+  }
+}
+
+// end section partners
 
 
 
