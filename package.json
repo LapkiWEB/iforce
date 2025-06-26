@@ -17,6 +17,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.0.0",
     "jquery": "^3.6.0",
-    "sass": "^1.44.0"
+    "sass": "^1.44.0",
+    "slick-carousel": "^1.8.1"
   }
 }

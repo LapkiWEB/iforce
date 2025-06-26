@@ -10,7 +10,7 @@ window.onscroll = function showHeader() {
 
 
 $(function () {
-  
+
   $('.menu__btn').on('click', (function () {
     if (!$('.nav').hasClass('active')) {
       $('.nav').addClass('active');
@@ -33,5 +33,73 @@ $(function () {
 
 
   }));
+
+
+
+  $('.product__item').each((index, wrapper) => {
+    const navSlider = $(wrapper).find('.slider-nav');
+    const forSlider = $(wrapper).find('.slider-for');
+    $(forSlider).slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: navSlider
+    });
+    $(navSlider).slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      prevArrow: $(wrapper).find('.slick-prev'),
+      nextArrow: $(wrapper).find('.slick-next'),
+      asNavFor: forSlider,
+      dots: true,
+      arrows: true,
+      centerMode: true,
+      focusOnSelect: true,
+      centerPadding: '0px',
+      responsive: [{
+        breakpoint: 1850,
+        settings: {
+          slidesToShow: 4,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 1351,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 1101,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 901,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 501,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          centerMode: false,
+        }
+      },
+      ]
+    });
+  })
+
+
+
 
 });

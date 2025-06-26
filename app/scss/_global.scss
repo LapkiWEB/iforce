@@ -67,3 +67,57 @@ body.menu-opened {
     // text-shadow: 3px 3px 1px #000;
   }
 }
+
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0px;
+  z-index: 1;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0px;
+  z-index: 1;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  .arrow__wrapper {
+    img {
+      width: 38px;
+      height: 67px;
+    }
+  }
+}
+
+.slick-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  button {
+    border: 1px solid $white;
+    border-radius: 2px;
+    height: 10px;
+    width: 15px;
+    margin: 20px 6px;
+    font-size: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    background-color: transparent;
+  } 
+}
+
+.slick-dots li[class="slick-active"] button {
+  background-color: $white;
+  width: 40px;
+}

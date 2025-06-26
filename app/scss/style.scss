@@ -418,10 +418,11 @@
 
 
 // start section main-company
-.main-company{
-  .container{
+.main-company {
+  .container {
     position: relative;
-    &::before{
+
+    &::before {
       position: absolute;
       content: '';
       top: 0;
@@ -435,17 +436,143 @@
     }
   }
 }
-.main-company__descr{
+
+.main-company__descr {
   margin-bottom: 30px;
 }
-.main-company__title{
+
+.main-company__title {
   padding-top: 130px;
 }
+
 // end section main-company
 
 
+.slider-services__descr {
+  margin-bottom: 30px;
+}
+
+.product__box-wrapper {
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  padding-bottom: 100px;
+}
+
+.product {
+  padding-top: 0;
+}
+
+.product__item {
 
 
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  // margin-bottom: 60px;
+  margin-bottom: 30px;
+  // gap: 15px;
+}
+
+.slider-for {
+  max-width: 700px;
+  width: 100%;
+}
+
+.product1-img {
+  width: 700px;
+  height: 490px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+}
+
+.product__box {
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.product__box-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.product__text {
+  margin-bottom: 20px;
+  // color: $light-brown;
+}
+
+.product__inner {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.product__inners {
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 18px;
+    border-bottom: 1px dashed rgba(0, 224, 255, 0.5);
+    ;
+  }
+}
+
+.slider-nav__wrapper {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0 60px;
+
+  .slick-prev {
+    position: absolute;
+    top: 43%;
+    transform: translate(0, -50%);
+    left: 0px;
+    z-index: 1;
+  }
+
+  .slick-next {
+    position: absolute;
+    top: 43%;
+    transform: translate(0, -50%);
+    right: 0px;
+  }
+}
+
+.product2-img {
+  max-width: 250px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.product__btn {
+  margin-left: 30px;
+}
 
 
 
