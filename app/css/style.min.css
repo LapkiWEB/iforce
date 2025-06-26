@@ -743,9 +743,10 @@ body.menu-opened {
 
 .product__box-wrapper {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 80%;
   background-position: bottom left;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 .product {
