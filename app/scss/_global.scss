@@ -122,3 +122,12 @@ body.menu-opened {
   background-color: $white;
   width: 40px;
 }
+
+.global-reviews__wrapper {
+  position: relative;
+  // padding: 0 100px;
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+
+}
