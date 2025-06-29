@@ -840,7 +840,7 @@
   max-width: 450px;
   width: 100%;
   margin: 0px 10px;
- 
+
 }
 
 .request__items-input {
@@ -851,6 +851,7 @@
   width: 100%;
   font-size: 16px;
   border-radius: 3px;
+
   &::placeholder {
     color: $blue;
   }
@@ -866,12 +867,46 @@
   width: 100%;
   text-align: center;
 }
-.request-btn{
+
+.request-btn {
   color: $white;
   border: none;
 }
 
 // end section request
+
+// start section main-contacts
+.main-contacts__inner{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.main-contacts-text {
+  display: block;
+  margin-bottom: 15px;
+
+}
+
+.main-contacts {
+  .social {
+    margin-bottom: 20px;
+  }
+}
+.main-contacts__item{
+  iframe{
+    border-radius: 5px;
+  }
+}
+.main-contacts__tel,
+.main-contacts__email{
+  transition: all .3s;
+  width: fit-content;
+  &:hover{
+    color: $contrast;
+  }
+}
+// end section main-contacts
 
 
 

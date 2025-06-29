@@ -1187,6 +1187,45 @@ body.menu-opened {
   border: none;
 }
 
+.main-contacts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-contacts-text {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.main-contacts .social {
+  margin-bottom: 20px;
+}
+
+.main-contacts__item iframe {
+  border-radius: 5px;
+}
+
+.main-contacts__tel,
+.main-contacts__email {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main-contacts__tel:hover,
+.main-contacts__email:hover {
+  color: rgb(171, 207, 255);
+}
+
 @media (max-width: 1850px) {
   .menu__btn {
     display: block;
@@ -1316,6 +1355,10 @@ body.menu-opened {
     width: 730px;
     height: 180px;
   }
+  .main-contacts__item iframe {
+    width: 500px;
+    height: 350px;
+  }
 }
 @media (max-width: 1300px) {
   .reviews__item {
@@ -1393,8 +1436,33 @@ body.menu-opened {
     width: 100%;
     height: 131px;
   }
+  .reviews__slider {
+    margin: 0 10px;
+  }
+  .reviews__text {
+    padding-right: 15px;
+  }
   .reviews__item {
     max-width: 100%;
+  }
+  .main-contacts__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-contacts__item-map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-contacts__item {
+    width: 100%;
+  }
+  .main-contacts__item iframe {
+    width: 100%;
+    height: 350px;
   }
 }
 @media (max-width: 1000px) {

@@ -165,6 +165,13 @@
       }
     }
   }
+
+  .main-contacts__item {
+    iframe {
+      width: 500px;
+      height: 350px;
+    }
+  }
 }
 
 @media(max-width: 1300px) {
@@ -261,6 +268,7 @@
     width: 100%;
     height: 131px;
 
+    // margin: 0 20px;
     img {
       max-width: 220px;
       width: 100%;
@@ -269,8 +277,34 @@
     }
   }
 
+  .reviews__slider {
+    margin: 0 10px;
+  }
+
+  .reviews__text {
+    padding-right: 15px;
+  }
+
   .reviews__item {
     max-width: 100%;
+  }
+
+  .main-contacts__inner {
+    flex-wrap: wrap;
+  }
+
+  .main-contacts__item-map {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-contacts__item {
+    width: 100%;
+
+    iframe {
+      width: 100%;
+      height: 350px;
+    }
   }
 }
 
@@ -411,13 +445,16 @@
     width: 100%;
     margin: 0 auto;
   }
-  .request__wrapper{
+
+  .request__wrapper {
     flex-wrap: wrap;
   }
-  .request__items-input{
+
+  .request__items-input {
     padding: 20px 20px;
   }
-  .request__item{
+
+  .request__item {
     margin-left: 0;
     margin-right: 0;
   }
@@ -504,7 +541,8 @@
     // max-width: 300px;
     // margin: 0 auto;
   }
-  .reviews__item{
+
+  .reviews__item {
     height: fit-content;
   }
 
