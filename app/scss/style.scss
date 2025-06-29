@@ -629,7 +629,7 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
- border-radius: 5px;
+  border-radius: 5px;
   border: 1px solid $white;
   transition: all .3s;
   cursor: pointer;
@@ -720,6 +720,7 @@
   flex: 0 0 100%;
   display: flex;
   padding-right: 30px;
+
   .container {
     max-width: 1920px;
     width: 100%;
@@ -764,6 +765,13 @@
 
 
 // start section reviews
+
+.reviews {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .reviews__item {
   display: flex;
   justify-content: space-between;
@@ -800,6 +808,70 @@
 }
 
 // end section reviews
+
+// start section request
+
+.main-request {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-request--bg {
+  // background: rgba(39, 70, 65, 0.60);
+  padding: 130px 0;
+
+}
+
+.request__title {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.request__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.request__item {
+  max-width: 450px;
+  width: 100%;
+  margin: 0px 10px;
+ 
+}
+
+.request__items-input {
+  border: 1px solid $white;
+  color: $background;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 3px;
+  &::placeholder {
+    color: $blue;
+  }
+}
+
+.request__items-textarea {
+  margin-bottom: 0;
+  height: 143px !important;
+  resize: none;
+}
+
+.request__inner-btn {
+  width: 100%;
+  text-align: center;
+}
+.request-btn{
+  color: $white;
+  border: none;
+}
+
+// end section request
 
 
 

@@ -411,6 +411,16 @@
     width: 100%;
     margin: 0 auto;
   }
+  .request__wrapper{
+    flex-wrap: wrap;
+  }
+  .request__items-input{
+    padding: 20px 20px;
+  }
+  .request__item{
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media(max-width: 700px) {
