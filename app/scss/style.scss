@@ -416,6 +416,22 @@
 
 // end section main-services
 
+.adv__item-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.adv__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.adv__item {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 // start section main-company
 .main-company {
@@ -938,7 +954,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  .social{
+
+  .social {
     margin-right: 0;
   }
 }
@@ -983,8 +1000,51 @@
 
 // end footer
 
+.starting-screen {
+  height: 90vh;
+  margin-top: 0px;
+  position: relative;
+  // padding-top: 139px;
+  // background-color: #fff;
 
+}
 
+.mini-screen {
+  height: 650px;
+}
 
+.center-title {
+  text-align: center !important;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding-top: 100px;
+}
+
+// .btn-wrapper {
+//   width: 100%;
+// }
+
+.center-btn {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: fit-content;
+}
+
+.politics__title-h4 {
+  font-size: 24px;
+  // @extend %BelB;
+  margin-bottom: 20px;
+}
+
+.mini-h-section {
+  height: 550px;
+  // height: fit-content;
+  // padding-bottom: 50px;
+}
+
+.text-descr {
+  margin-bottom: 20px;
+}
 
 @import 'media';

@@ -14,6 +14,25 @@ body.menu-opened {
   overflow: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  margin: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $blue;
+  position: relative;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: green;
+  background: $background;
+  border-radius: 5px;
+  border: 1px solid $blue;
+
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -130,4 +149,112 @@ body.menu-opened {
   width: 100%;
   margin: 0 auto;
 
+}
+
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 59, 94, 0.9);
+  backdrop-filter: blur(10px);
+  display: none;
+
+}
+
+
+
+.modal__inner {
+  width: 100%;
+
+}
+
+.modal__wrapper {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.modal__title {
+  position: relative;
+  text-align: center;
+  // width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.close__btn {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  cursor: pointer;
+}
+
+.close__line {
+  width: 30px;
+  background-color: $white;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.close__line1 {
+  transform: rotate(45deg);
+  top: 6px;
+}
+
+.close__line2 {
+  transform: rotate(-45deg);
+  top: -3px;
+}
+
+.show {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+.breadcrumbs {
+  // margin-bottom: 30px;
+  // margin-top: 30px;
+  padding-top: 90px;
+  margin-bottom: 20px;
+}
+
+.breadcrumbs__list-item {
+  display: inline-block;
+  padding-right: 18px;
+  margin-right: 3px;
+  font-size: 14px;
+  // line-height: 18px;
+  // text-transform: uppercase;
+  position: relative;
+  // @extend %Arsenal-Regular;
+  color: $white;
+
+  &::after {
+    position: absolute;
+    content: '>';
+    right: 2px;
+    top: 0px;
+  }
+
+  a {
+    transition: all 250ms ease-in-out;
+  }
+}
+
+.breadcrumbs__list-item:last-child::after {
+  display: none;
 }
