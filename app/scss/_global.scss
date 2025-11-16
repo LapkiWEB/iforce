@@ -53,23 +53,31 @@ body.menu-opened {
   padding: 0 140px;
 }
 
-.section{
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  // padding: 0 140px;
+}
+
+.section {
   padding: 50px 0;
 }
-.title{
-    @extend %Bold;
-    font-size: 64px;
-    line-height: 70px;
-    // line-height: 49px;
-    // padding: 0px 35px;
-    // border-bottom: 2px solid $blue;
-    // text-align: center;
-    // margin: 0 auto;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    color: $white;
-    max-width: fit-content;
+
+.title {
+  @extend %Bold;
+  font-size: 64px;
+  line-height: 70px;
+  // line-height: 49px;
+  // padding: 0px 35px;
+  // border-bottom: 2px solid $blue;
+  // text-align: center;
+  // margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: $white;
+  max-width: fit-content;
 }
+
 .global-btn {
   padding: 12px 40px;
   border-radius: 5px;
@@ -134,7 +142,7 @@ body.menu-opened {
     margin-bottom: 0;
     cursor: pointer;
     background-color: transparent;
-  } 
+  }
 }
 
 .slick-dots li[class="slick-active"] button {

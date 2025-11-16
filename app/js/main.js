@@ -101,6 +101,9 @@ $(function () {
 
 
 
+
+
+
   $('.questions__item').on('click', (function () {
     $(this).find('.questions__item-title--btn').addClass('active');
     $(this).siblings().find('.questions__item-title--btn').removeClass('active');
@@ -142,6 +145,9 @@ $(function () {
     }
     ]
   });
+
+
+  lightGallery(document.querySelector('.gallery'));
 
 });
 
