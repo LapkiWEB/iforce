@@ -1518,6 +1518,7 @@ body.menu-opened {
   overflow: hidden;
   -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3), -3px -3px 3px 0 rgba(161, 180, 204, 0.3), inset 3px 3px 3px 0 rgba(0, 0, 0, 0.3), inset -3px -3px 3px 0 rgba(161, 180, 204, 0.3);
           box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3), -3px -3px 3px 0 rgba(161, 180, 204, 0.3), inset 3px 3px 3px 0 rgba(0, 0, 0, 0.3), inset -3px -3px 3px 0 rgba(161, 180, 204, 0.3);
+  height: 100%;
 }
 .dev-portfolio__item img {
   -o-object-fit: cover;
@@ -1558,6 +1559,71 @@ body.menu-opened {
   grid-column-start: span 2;
 }
 
+.dev-reqest__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dev-reqest__item {
+  width: 60%;
+}
+
+.dev-reqest__item-box {
+  width: 40%;
+}
+
+.dev-reqest__items {
+  width: 100%;
+  max-width: 280px;
+  display: inline-block;
+}
+
+.dev-reqest__btn {
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.dev-reqest__littletext {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.dev-reqest__descr {
+  margin-bottom: 30px;
+}
+
+.dev-contacts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dev-contacts .mob-menu__contacts-link {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.dev-contacts .social {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+@media (max-width: 1700px) {
+  .dev-reqest__title {
+    height: 100%;
+  }
+  .dev-reqest__btn {
+    display: block;
+    margin-left: 0;
+  }
+}
 @media (max-width: 1600px) {
   .dev-portfolio__inner {
     -ms-grid-columns: (1fr)[2] !important;
@@ -1594,6 +1660,27 @@ body.menu-opened {
 @media (max-width: 1200px) {
   .dev-portfolio__item {
     height: 350px !important;
+  }
+}
+@media (max-width: 1100px) {
+  .dev-reqest__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .dev-reqest__item-box {
+    width: 100%;
+    text-align: center;
+  }
+  .dev-reqest__item {
+    width: 100%;
+    text-align: center;
+  }
+  .dev-contacts {
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
   }
 }
 @media (max-width: 1850px) {
