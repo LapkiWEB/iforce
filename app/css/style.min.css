@@ -1636,6 +1636,54 @@ body.menu-opened {
   height: 70%;
 }
 
+.devlinkseo__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.devlinkseo__item {
+  background-size: cover;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 48%;
+  height: 360px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3), -3px -3px 3px 0 rgba(161, 180, 204, 0.3), inset 3px 3px 3px 0 rgba(0, 0, 0, 0.3), inset -3px -3px 3px 0 rgba(161, 180, 204, 0.3);
+          box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3), -3px -3px 3px 0 rgba(161, 180, 204, 0.3), inset 3px 3px 3px 0 rgba(0, 0, 0, 0.3), inset -3px -3px 3px 0 rgba(161, 180, 204, 0.3);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.devlinkseo__item .main-services-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 30px;
+}
+.devlinkseo__item:hover {
+  background-size: 110% 110%;
+}
+.devlinkseo__item:hover .main-services__other {
+  color: rgb(171, 207, 255);
+}
+
 @media (max-width: 1700px) {
   .dev-reqest__title {
     height: 100%;
@@ -1677,10 +1725,21 @@ body.menu-opened {
     height: 500px !important;
     margin-left: 10px;
   }
+  .devlinkseo__item {
+    height: 320px;
+  }
+}
+@media (max-width: 1300px) {
+  .devlinkseo__item {
+    height: 280px;
+  }
 }
 @media (max-width: 1200px) {
   .dev-portfolio__item {
     height: 350px !important;
+  }
+  .devlinkseo__item {
+    height: 280px !important;
   }
 }
 @media (max-width: 1100px) {
@@ -1702,6 +1761,15 @@ body.menu-opened {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
+  }
+}
+@media (max-width: 900px) {
+  .devlinkseo__item {
+    height: 220px !important;
+    width: 100%;
+  }
+  .devlinkseo__item .main-services-bg {
+    padding: 20px;
   }
 }
 @media (max-width: 1850px) {
